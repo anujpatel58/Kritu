@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <ImageView
+            android:id="@+id/iv_background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/Static"
+            android:scaleType="fitCenter"
+            android:src="@drawable/main" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lay"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:text="@string/PUL" />
+
+        <LinearLayout
+            android:id="@+id/horizonlay"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/user"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:background="@layout/text"
+                android:hint="@string/EPL"
+                android:singleLine="true"
+                android:textColor="@android:color/black" />
+
+            <ImageView
+                android:id="@+id/mapim1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:contentDescription="@string/Static"
+                android:scaleType="fitCenter"
+                android:src="@drawable/map" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:text="@string/DL" />
+
+        <LinearLayout
+            android:id="@+id/horizonlay3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/pass"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:background="@layout/text"
+                android:hint="@string/EDL"
+                android:singleLine="true"
+                android:textColor="@android:color/black" />
+
+            <ImageView
+                android:id="@+id/mapim2"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:contentDescription="@string/Static"
+                android:scaleType="fitCenter"
+                android:src="@drawable/map" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="40dp"
+            android:text="@string/DATE" />
+
+        <LinearLayout
+            android:id="@+id/horizonlay4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/date"
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:background="@layout/text"
+                android:hint="@string/DATE"
+                android:singleLine="true"
+                android:textColor="@android:color/black" />
+
+            <ImageView
+                android:id="@+id/dateim"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:contentDescription="@string/Static"
+                android:scaleType="fitCenter"
+                android:src="@drawable/date" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/TIME" />
+
+        <LinearLayout
+            android:id="@+id/horizonlay2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/time"
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:background="@layout/text"
+                android:hint="@string/TIME"
+                android:singleLine="true"
+                android:textColor="@android:color/black" />
+
+            <ImageView
+                android:id="@+id/timeim"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:contentDescription="@string/Static"
+                android:scaleType="fitCenter"
+                android:src="@drawable/time" />
+        </LinearLayout>
+	 	<LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            <CheckBox
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="Week"
+		        android:textColor="@android:color/white"
+		        android:checked="true"
+		        android:textSize="20sp"
+		        android:id="@+id/checkBox3"/>
+		
+		    <CheckBox
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textColor="@android:color/white"
+		        android:text="Month"
+		        android:textSize="20sp"
+		        android:id="@+id/checkBox4"
+		        android:checked="false" />
+        </LinearLayout>
+        
+    
+        <Button
+            android:id="@+id/login"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@layout/button"
+            android:text="@string/Button" />
+    </LinearLayout>
+
+</RelativeLayout>
